@@ -34,3 +34,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: install packages
+        run: |
+          pip3 install pygame
+
+      - name: run python file
+        run: |
+          python3 snakegame.py
