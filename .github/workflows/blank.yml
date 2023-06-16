@@ -38,7 +38,13 @@ jobs:
       - name: install packages
         run: |
           pip3 install pygame
+          pwd
 
       - name: run python file
         run: |
-          python3 snakegame.py
+          python3 hello.py
+
+      - name: Step 3 - Use the Upload Artifact GitHub Action
+        uses: actions/upload-artifact@v2
+        with: 
+          name: artifact
